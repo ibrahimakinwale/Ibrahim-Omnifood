@@ -1,0 +1,357 @@
+@media (max-width: 1024px) {
+  header {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .hero {
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .hero-primary {
+    font-size: 36px;
+  }
+
+  .hero-img {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .how-it-works {
+    padding: 60px 40px;
+  }
+
+  .step {
+    gap: 40px;
+  }
+
+  .step-img::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .step-img::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .meal-container {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .pricing-container {
+    padding: 0 60px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial {
+    gap: 40px;
+    padding: 60px 40px;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* SMALL TABLET (below 768px) */
+@media (max-width: 768px) {
+  /* NAVBAR */
+  .menu {
+    gap: 20px;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-primary {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .btn-primary {
+    margin-right: 0;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  /* FEATURED */
+  .featured-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 60px 30px;
+  }
+
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+
+  .step {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .step:nth-child(odd) .step-img {
+    order: -1;
+  }
+
+  .step-img::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .step-img::after {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* MEALS */
+  .meals {
+    padding: 60px 30px;
+  }
+
+  .meal-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diet {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  /* PRICING */
+  .pricing-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA */
+  .section-cta {
+    padding: 40px 20px;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 200px;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    grid-column: span 1;
+  }
+
+  /* FOOTER */
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE (below 480px) */
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+  }
+  .nav-bar {
+    padding: 20px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    justify-content: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .hamburger ion-icon {
+    font-size: 36px;
+    color: #333;
+  }
+  /* HERO */
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero-primary {
+    font-size: 26px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 40px 20px;
+  }
+
+  .step-number {
+    font-size: 56px;
+  }
+
+  .step-heading {
+    font-size: 22px;
+  }
+
+  /* MEALS */
+  .meals {
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial {
+    padding: 40px 20px;
+  }
+
+  .testimonial-text h1 {
+    font-size: 28px;
+  }
+
+  .testimonial-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* PRICING */
+  .section-pricing {
+    padding: 40px 16px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 60px 20px;
+  }
+}
